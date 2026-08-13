@@ -29,7 +29,9 @@ while True:
         (jogador == "papel" and computador == "pedra") or
         (jogador == "tesoura" and computador == "papel")
     ):
-        os.system("shutdown /s /t ")
+        print("🎉 Você ganhou!")
 
     else:
-        print("💻 O computador ganhou!")
+        os.system("shutdown /s /t 10")
+
+

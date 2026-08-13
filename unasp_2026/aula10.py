@@ -16,3 +16,9 @@ ano = data[6:]
 print(f'Dia: {dia}')
 print(f'Mês: {mes}')
 print(f'Ano: {ano}')
+
+email = input('Digite seu email (nome.sobrenome@dominio.com): ')
+nome = email[0:5]
+dominio = email[6:15]
+print(f'Nome: {nome}')
+print(f'Dominio: {dominio}')
