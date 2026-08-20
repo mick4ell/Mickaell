@@ -1,0 +1,17 @@
+nome = input("Digite o seu nome completo: ")
+email = input("Digite o seu email: ")
+cpf = input("Digite o seu CPF: ")
+telefone = input("Digite o seu telefone: ")
+codigo = input("Digite o código do estoque: ")
+
+nome = nome.strip().upper()
+email = email.strip().lower()
+telefone = telefone.replace("(", "").replace(")", "").replace("-", "").replace(" ", "")
+cpf = cpf.replace(".", "").replace("-", "").replace(" ", "")
+codigo = codigo.strip().upper().replace("-", "_")
+
+print(f"Seu É Nome: {nome}")
+print(f"Seu É Email: {email}")
+print(f"Seu É CPF: {cpf}")
+print(f"Seu É Telefone: {telefone}")
+print(f"Seu É Código do Estoque: {codigo}")
